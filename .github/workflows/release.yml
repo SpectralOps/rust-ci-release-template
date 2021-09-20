@@ -177,7 +177,6 @@ jobs:
         with:
           # A PR will be sent to github.com/Homebrew/homebrew-core to update this formula:
           formula-name: ${{ env.PROJECT_NAME }}
-          formula-path: ci/formula.rb
           homebrew-tap: ${{ env.BREW_TAP }}
           commit-message: updating formula for ${{ env.PROJECT_NAME }}
         env:
