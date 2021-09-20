@@ -176,7 +176,7 @@ jobs:
       - uses: mislav/bump-homebrew-formula-action@v1
         with:
           # A PR will be sent to github.com/Homebrew/homebrew-core to update this formula:
-          formula-name: ${{ env.PROJECT_NAME }}
+          formula-path: ${{env.PROJECT_NAME}}.rb
           homebrew-tap: ${{ env.BREW_TAP }}
           commit-message: updating formula for ${{ env.PROJECT_NAME }}
         env:
