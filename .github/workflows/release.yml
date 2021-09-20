@@ -176,11 +176,11 @@ jobs:
           overwrite: true
 
       - uses: mislav/bump-homebrew-formula-action@v1
-            with:
-              # A PR will be sent to github.com/Homebrew/homebrew-core to update this formula:
-              formula-name: $PROJECT_NAME
-              formula-path: ci/formula.rb
-              homebrew-tap: $BREW_TAP
-              commit-message: updating formula for $PROJECT_NAME
-            env:
-              COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
+        with:
+          # A PR will be sent to github.com/Homebrew/homebrew-core to update this formula:
+          formula-name: $PROJECT_NAME
+          formula-path: ci/formula.rb
+          homebrew-tap: $BREW_TAP
+          commit-message: updating formula for $PROJECT_NAME
+        env:
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
