@@ -11,7 +11,7 @@ on:
 env:
   BIN_NAME: bfoot
   PROJECT_NAME: bumblefoot
-  BREW_TAP: jondot/brew-tap
+  BREW_TAP: jondot/homebrew-tap
 
 jobs:
   dist:
