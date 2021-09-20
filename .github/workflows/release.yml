@@ -105,7 +105,6 @@ jobs:
           else
             cp "target/${{ matrix.target }}/release/$BIN_NAME" "dist/"
           fi
-          cp -r runtime dist
 
       - uses: actions/upload-artifact@v2.2.4
         with:
@@ -155,7 +154,6 @@ jobs:
               pkgname=$PROJECT_NAME-$TAG-$platform
               mkdir tmp/$pkgname
               # cp LICENSE README.md tmp/$pkgname
-              mv bins-$platform/runtime tmp/$pkgname/
               mv bins-$platform/$BIN_NAME$exe tmp/$pkgname
               chmod +x tmp/$pkgname/$BIN_NAME$exe
 
