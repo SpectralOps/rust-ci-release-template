@@ -149,6 +149,7 @@ jobs:
 
           for dir in bins-* ; do
               platform=${dir#"bins-"}
+              unset exe
               if [[ $platform =~ "windows" ]]; then
                   exe=".exe"
               fi
